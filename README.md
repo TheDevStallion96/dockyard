@@ -5,7 +5,7 @@
 > **🎯TODO** <br> Wrap the badges in an HTML/CSS container!
 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub labels](https://img.shields.io/github/labels/TheDevStallion96/dockyard/Learning?style=plastic)
+![GitHub labels](https://img.shields.io/github/labels/Https://github.com/TheDevStallion96/dockyard/Learning?style=plastic)
 
 ![Linux](https://img.shields.io/badge/Linux-white?style=for-the-badge&logo=linux&logoColor=080530)
 
