@@ -86,6 +86,8 @@ docker run -d --name my-container my-custom-image
 **Q:** Is this production-ready?
 **A:** Absolutely not. Unless your production is a Raspberry Pi under your desk.
 
+## ⚠️ **WARNING**: These images are NOT production-ready or public facing, they are purely for my home lab.
+
 ---
 
 ## 🧑‍💻 Contributing
