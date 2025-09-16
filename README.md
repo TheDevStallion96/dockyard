@@ -6,9 +6,9 @@
 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/https%3A%2F%2Fgithub.com%2FTheDevStallion96/https%3A%2F%2Fgithub.com%2FTheDevStallion96%2Fdockyard/latest)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/thedevstallion96/dockyard/latest)
 
-![GitHub labels](https://img.shields.io/github/labels/Https://github.com/TheDevStallion96/dockyard/Learning?style=plastic)
+![GitHub labels](https://img.shields.io/github/labels/TheDevStallion96/dockyard/Learning?style=plastic)
 
 ![Linux](https://img.shields.io/badge/Linux-white?style=for-the-badge&logo=linux&logoColor=080530)
 
