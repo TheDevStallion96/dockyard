@@ -1,0 +1,72 @@
+{
+	"name": "Dockyard Development Container",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+	
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest",
+			"ppa": false
+		},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"installOhMyZsh": "true",
+			"upgradePackages": "true",
+			"username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"exiasr.hadolint",
+				"timonwong.shellcheck",
+				"foxundermoon.shell-format",
+				"ms-vscode.makefile-tools",
+				"redhat.vscode-yaml",
+				"DavidAnson.vscode-markdownlint"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash",
+						"icon": "terminal-bash"
+					},
+					"zsh": {
+						"path": "/bin/zsh",
+						"icon": "terminal"
+					}
+				},
+				"docker.showStartPage": false,
+				"files.eol": "\n",
+				"editor.formatOnSave": true,
+				"editor.tabSize": 4,
+				"editor.insertSpaces": true
+			}
+		}
+	},
+
+	"remoteUser": "vscode",
+	
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	],
+
+	"postCreateCommand": "bash -c 'docker --version && git --version && echo \"🛳️ Welcome to Dockyard! Your development environment is ready.\"'",
+
+	"forwardPorts": [],
+
+	"portsAttributes": {},
+
+	"remoteEnv": {
+		"DOCKER_BUILDKIT": "1"
+	}
+}

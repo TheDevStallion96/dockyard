@@ -44,6 +44,19 @@ git clone https://github.com/TheDevStallion96/dockyard.git
 cd dockyard
 ````
 
+### 🚀 Quick Start with Dev Container
+
+For the best development experience, use the included devcontainer:
+
+1. Open in VS Code
+2. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+3. Click "Reopen in Container" when prompted
+4. Start building! 🛠️
+
+See [.devcontainer/README.md](.devcontainer/README.md) for more details.
+
+### 🐳 Manual Docker Usage
+
 Build an image from one of the directories:
 
 ```bash
@@ -66,6 +79,9 @@ docker run -d --name my-container my-custom-image
 ├── README.md                  
 ├── CONTRIBUTING.md
 ├── LICENSE
+├── .devcontainer/           # VS Code Dev Container configuration
+│   ├── devcontainer.json    # Container setup and features
+│   └── README.md           # Dev Container documentation
 ├── ubuntu-base/
 │   ├── Dockerfile              
 │   ├── config/
